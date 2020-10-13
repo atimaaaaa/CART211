@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Structure elements*/
+
+body{
+  background-color: antiquewhite;
+  font-family: arial, sans-serif;
+  width: 100vw;
+}
+
+header {
+  background-color: #DBA509;
+  color: #068F6A; /* darkgreen*/
+  padding: 5%;
+  text-align: center;
+}
+
+header h1{
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+h2{
+  color: #1FDBA8;
+  font-size: 30px;
+}
+
+article {
+  width: 60%;
+}
+
+.blue {
+  color: darkblue;
+  font-style: italic;
+}
+
+.red {
+  color: orangered;
+  font-style: italic;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.right {
+  margin: 0 30%;
+}
+
+img {
+  margin-bottom: 5%;
+  width: 60%;
+}
+
+nav {
+  background-color: #068F6A;
+  text-align: center;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 50% 30% 20%;
+
+}
+
+nav a:link {
+  background-color: antiquewhite;
+  color: darkgrey;
+  padding: 1% 1.5%;
+  display: inline-block; /* anywhere in the box is affected as a link*/
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #068F6A;
+}
+
+nav a:hover {
+  color: #CD55DC;
+  background-color: darkgray;
+}
+
+nav a.active { /* active class is selected*/
+  color: #CD55DC;
+  background-color: #1FDBA8;
+}
+
+.button {
+  color: white;
+  background-color: #DBA509;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 20%;
+  margin:20px auto;
+}
+
+.to-visit {
+  background-color: aquamarine;
+}
+
+article{
+  padding: 2%;
+}
+
+article h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 1%;
+}
+
+article h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 1%;
+}
+
+article p {
+  margin-bottom: 1%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+footer{
+  padding: 3%;
+  background-color: darkgray;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+
+}
