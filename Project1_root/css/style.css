@@ -52,9 +52,9 @@ header nav {
 }
 
 .bio {
-  height: 100vh;
   min-height: 70vh;
   width: 100%;
+  height: auto;
 
   display: flex;
   justify-content: flex-start;
