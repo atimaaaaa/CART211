@@ -1,0 +1,222 @@
+@import url("https://use.typekit.net/umr7ryg.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  background-color: #F0E6D8; /* Beige background*/
+
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+  height: 100vh;
+  width: 60vw;
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  height: 100vh;
+}
+
+.readings_TOC {
+  width: 100vw;
+  min-height: 70vh;
+  height: auto;
+
+
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+
+}
+
+.bio {
+  height: 100vh;
+  min-height: 70vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-flow: row nowrap;
+  padding: 10%;
+}
+
+
+figure {
+  margin-right: 5%;
+}
+
+figure img {
+  width: 30vw;
+}
+/*Typography */
+
+h1{
+  font-family: jaf-lapture-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20em;
+  letter-spacing: -15px;
+  color: #0065FF; /* Blue */
+}
+
+h2{
+  font-family: jaf-lapture-display, serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 5em;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  color: black;
+  margin: 10% 0 20% 0;
+}
+
+h3 {
+  font-family: jaf-lapture-display, serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #0065FF; /* Blue */
+}
+
+p {
+  font-family: jaf-lapture, serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: black;
+  margin-bottom: 3%;
+}
+
+.description h3 {
+  margin-bottom: 2%;
+
+  width: 60%;
+  min-width: 600px;
+}
+
+.article_width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%
+}
+
+.article_container{
+  width: 50%;
+  min-width: 600px;
+  max-width: 900px;
+  height: auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-right: 15%;
+}
+
+.date {
+  color: #0065FF;
+}
+
+.originalLink {
+  text-decoration: none;
+  color: #FD2675; /* red color */
+  font-size: 22px;
+}
+
+/* Nav links */
+ul a:link, ul a:visited{
+  font-family: jaf-lapture, serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #0065FF;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-right: 0px;
+  text-decoration: none;
+}
+
+ul a:hover{
+  font-family: jaf-lapture, serif;
+  font-weight: 100;
+  font-style: italic;
+  color: #FD2675; /* Red */
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+ul a:active{
+  font-family: jaf-lapture, serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #FD2675; /* Red */
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: none;
+  color: red;
+}
+
+.article_width .outline {
+  line-height: 0.8em;
+}
+
+.outline:link, .outline:visited{
+  font-family: jaf-lapture, serif;
+  font-size: 12em;
+  font-weight: 200;
+  font-style: normal;
+
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #0065FF;
+}
+
+.outline:hover{
+  font-family: jaf-lapture, serif;
+  font-size: 12em;
+  font-weight: 200;
+  font-style: normal;
+
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #FD2675;
+}
+
+.outline:active{
+  font-family: jaf-lapture, serif;
+  font-size: 12em;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke: 1px green;
+}
