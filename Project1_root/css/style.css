@@ -5,10 +5,9 @@
   padding: 0px;
 }
 
-
 body {
-  background-color: #F0E6D8; /* Beige background*/
-
+  background-color: #F0E6D8;
+  /* Beige background*/
 }
 
 header nav {
@@ -18,8 +17,7 @@ header nav {
   padding: 2%;
 }
 
-
-.centered{
+.centered {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -42,17 +40,14 @@ header nav {
   width: 100vw;
   min-height: 70vh;
   height: auto;
-
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   flex-flow: column wrap;
-
 }
 
 .bio {
   background: green;
-
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
@@ -65,7 +60,6 @@ header nav {
   min-width: 600px;
 }
 
-
 figure {
   margin-right: 5%;
 }
@@ -73,18 +67,19 @@ figure {
 figure img {
   width: 30vw;
 }
-/*Typography */
 
-h1{
+/*Typography */
+h1 {
   font-family: jaf-lapture-display, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20em;
   letter-spacing: -15px;
-  color: #0065FF; /* Blue */
+  color: #0065FF;
+  /* Blue */
 }
 
-h2{
+h2 {
   font-family: jaf-lapture-display, serif;
   font-weight: 400;
   font-style: bold;
@@ -100,7 +95,8 @@ h3 {
   font-weight: 400;
   font-size: 2em;
   line-height: 1.3em;
-  color: #0065FF; /* Blue */
+  color: #0065FF;
+  /* Blue */
 }
 
 p {
@@ -119,12 +115,11 @@ p {
   padding: 5%
 }
 
-.article_container{
+.article_container {
   width: 50%;
   min-width: 600px;
   max-width: 900px;
   height: auto;
-
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -137,12 +132,13 @@ p {
 
 .originalLink {
   text-decoration: none;
-  color: #FD2675; /* red color */
+  color: #FD2675;
+  /* red color */
   font-size: 22px;
 }
 
 /* Nav links */
-ul a:link, ul a:visited{
+ul a:link, ul a:visited {
   font-family: jaf-lapture, serif;
   font-weight: 100;
   font-style: normal;
@@ -153,21 +149,23 @@ ul a:link, ul a:visited{
   text-decoration: none;
 }
 
-ul a:hover{
+ul a:hover {
   font-family: jaf-lapture, serif;
   font-weight: 100;
   font-style: italic;
-  color: #FD2675; /* Red */
+  color: #FD2675;
+  /* Red */
   text-transform: uppercase;
   font-size: 24px;
   text-decoration: none;
 }
 
-ul a:active{
+ul a:active {
   font-family: jaf-lapture, serif;
   font-weight: 100;
   font-style: normal;
-  color: #FD2675; /* Red */
+  color: #FD2675;
+  /* Red */
   text-transform: uppercase;
   font-size: 24px;
   text-decoration: none;
@@ -178,12 +176,11 @@ ul a:active{
   line-height: 0.8em;
 }
 
-.outline:link, .outline:visited{
+.outline:link, .outline:visited {
   font-family: jaf-lapture, serif;
   font-size: 12em;
   font-weight: 200;
   font-style: normal;
-
   letter-spacing: -5px;
   text-transform: uppercase;
   text-decoration: none;
@@ -191,12 +188,11 @@ ul a:active{
   -webkit-text-stroke: 1px #0065FF;
 }
 
-.outline:hover{
+.outline:hover {
   font-family: jaf-lapture, serif;
   font-size: 12em;
   font-weight: 200;
   font-style: normal;
-
   letter-spacing: -5px;
   text-transform: uppercase;
   text-decoration: none;
@@ -204,7 +200,7 @@ ul a:active{
   -webkit-text-stroke: 1px #FD2675;
 }
 
-.outline:active{
+.outline:active {
   font-family: jaf-lapture, serif;
   font-size: 12em;
   font-weight: 200;
