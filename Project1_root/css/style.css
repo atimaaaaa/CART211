@@ -23,7 +23,7 @@ header nav {
   align-content: center;
   flex-flow: row wrap;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   width: 60vw;
   margin: auto;
 }
@@ -43,7 +43,7 @@ header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
 
 .bio {
@@ -72,7 +72,7 @@ h1 {
   font-family: jaf-lapture-display, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 13em;
+  font-size: 15em;
   letter-spacing: -10px;
   color: #0065FF;
   /* Blue */
@@ -112,7 +112,6 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 5%;
-    background:red;
 }
 
 .article_container {
@@ -124,7 +123,6 @@ p {
   flex-flow: row wrap;
   justify-content: space-between;
   padding-right: 15%;
-  background: greenyellow;
 }
 
 .date {
