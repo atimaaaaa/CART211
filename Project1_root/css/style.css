@@ -73,7 +73,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 13em;
-  letter-spacing: -15px;
+  letter-spacing: -10px;
   color: #0065FF;
   /* Blue */
 }
@@ -111,7 +111,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5%
+  padding: 5%;
+    background:red;
 }
 
 .article_container {
@@ -122,7 +123,8 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding-right: 30%;
+  padding-right: 15%;
+  background: greenyellow;
 }
 
 .date {
@@ -177,7 +179,7 @@ ul a:active {
 
 .outline:link, .outline:visited {
   font-family: jaf-lapture, serif;
-  font-size: 12em;
+  font-size: 10em;
   font-weight: 200;
   font-style: normal;
   letter-spacing: -5px;
@@ -189,7 +191,7 @@ ul a:active {
 
 .outline:hover {
   font-family: jaf-lapture, serif;
-  font-size: 12em;
+  font-size: 10em;
   font-weight: 200;
   font-style: normal;
   letter-spacing: -5px;
@@ -201,7 +203,7 @@ ul a:active {
 
 .outline:active {
   font-family: jaf-lapture, serif;
-  font-size: 12em;
+  font-size: 10em;
   font-weight: 200;
   font-style: normal;
   letter-spacing: -5px;
