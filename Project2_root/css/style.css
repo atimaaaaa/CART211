@@ -100,6 +100,8 @@ a:hover{
 
 .main_items {
   padding-bottom: 10%;
+  display: flex;
+  flex-flow: column;
 }
 
 .button {
@@ -144,4 +146,9 @@ a:hover{
 .content:hover {
   background: #49E340;
   color: #07433f;
+}
+
+.wireframe {
+  width: 500px;
+  padding-bottom: 50px;
 }
