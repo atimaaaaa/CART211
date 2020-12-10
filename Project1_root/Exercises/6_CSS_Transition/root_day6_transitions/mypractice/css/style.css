@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*if add padding or margin, width won't get bigger*/
+}
+
+nav {
+  background: bisque;
+  display: flex;
+  position: fixed; /* Doesnt move when scroll */
+  left: 0;
+  top:0;
+  width: 100%; /* Out of the flow of html. */
+}
+
+a:link {
+  background: cadetblue;
+  flex-grow: 1; /* equal amount of space of parent container */
+  text-align: center;
+  padding: 1% 2%;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+   /* transition in the initial state! article, links, etc.*/
+  /* which? time? (usually 0.3-0.5s) */
+}
+
+a:visited {
+  color: #555;
+}
+
+a:hover {
+  background: #333;
+  color: cadetblue;
+}
+
+
+
+
+.large {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/places1.jpg) no-repeat fixed center center; /* jump out of css folder*/
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-content: multiple row items */
+  /* align-items: one item */
+}
+
+.large article {
+  width; 20%;
+  background: white;
+  padding: 2%;
+  opacity: 1; /*  affects parent and children, 0=0%, 1=100%, */
+  transition: all 0.3s;
+}
+
+.large article:hover {
+  opacity:0;
+  background: blanchedalmond;
+}
+
+.medium {
+  width: 100%;
+  height: 100vh;
+  background:  blanchedalmond;
+}

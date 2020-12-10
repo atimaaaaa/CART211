@@ -5,9 +5,13 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #F0E6D8;
-  /* Beige background*/
+  background-color: #F0E6D8; /* Beige background*/
+
 }
 
 header nav {
@@ -17,13 +21,14 @@ header nav {
   padding: 2%;
 }
 
-.centered {
+
+.centered{
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   width: 60vw;
   margin: auto;
 }
@@ -38,15 +43,20 @@ header nav {
 
 .readings_TOC {
   width: 100vw;
-  min-height: 70vh;
+  min-height: 100vh;
   height: auto;
+
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 }
 
 .bio {
+  min-height: 70vh;
+  height: auto;
+  width: 100%;
+
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
@@ -54,10 +64,6 @@ header nav {
   padding: 10%;
 }
 
-.description h3 {
-  margin-bottom: 2%;
-  min-width: 600px;
-}
 
 figure {
   margin-right: 5%;
@@ -66,23 +72,22 @@ figure {
 figure img {
   width: 30vw;
 }
-
 /*Typography */
-h1 {
+
+h1{
   font-family: jaf-lapture-display, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 17em;
-  letter-spacing: -10px;
-  color: #0065FF;
-  /* Blue */
+  font-size: 20em;
+  letter-spacing: -15px;
+  color: #0065FF; /* Blue */
 }
 
-h2 {
+h2{
   font-family: jaf-lapture-display, serif;
   font-weight: 400;
   font-style: bold;
-  font-size: 4em;
+  font-size: 5em;
   line-height: 0.9em;
   text-transform: uppercase;
   color: black;
@@ -92,10 +97,17 @@ h2 {
 h3 {
   font-family: jaf-lapture-display, serif;
   font-weight: 400;
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #0065FF; /* Blue */
+}
+
+h4 {
+  font-family: jaf-lapture-display, serif;
+  font-weight: 400;
   font-size: 1.5em;
   line-height: 1.3em;
-  color: #0065FF;
-  /* Blue */
+  color: #0065FF; /* Blue */
 }
 
 p {
@@ -107,18 +119,26 @@ p {
   margin-bottom: 3%;
 }
 
+.description h3 {
+  margin-bottom: 2%;
+
+  width: 60%;
+  min-width: 600px;
+}
+
 .article_width {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5%;
+  padding: 5%
 }
 
-.article_container {
+.article_container{
   width: 50%;
   min-width: 600px;
   max-width: 900px;
   height: auto;
+
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -131,13 +151,12 @@ p {
 
 .originalLink {
   text-decoration: none;
-  color: #FD2675;
-  /* red color */
+  color: #FD2675; /* red color */
   font-size: 22px;
 }
 
 /* Nav links */
-ul a:link, ul a:visited {
+ul a:link, ul a:visited{
   font-family: jaf-lapture, serif;
   font-weight: 100;
   font-style: normal;
@@ -148,23 +167,21 @@ ul a:link, ul a:visited {
   text-decoration: none;
 }
 
-ul a:hover {
+ul a:hover{
   font-family: jaf-lapture, serif;
   font-weight: 100;
   font-style: italic;
-  color: #FD2675;
-  /* Red */
+  color: #FD2675; /* Red */
   text-transform: uppercase;
   font-size: 24px;
   text-decoration: none;
 }
 
-ul a:active {
+ul a:active{
   font-family: jaf-lapture, serif;
   font-weight: 100;
   font-style: normal;
-  color: #FD2675;
-  /* Red */
+  color: #FD2675; /* Red */
   text-transform: uppercase;
   font-size: 24px;
   text-decoration: none;
@@ -175,38 +192,63 @@ ul a:active {
   line-height: 0.8em;
 }
 
-.outline:link, .outline:visited {
+.outline:link, .outline:visited, .outline:active{
   font-family: jaf-lapture, serif;
-  font-size: 10em;
+  font-size: 9em;
   font-weight: 200;
   font-style: normal;
+
   letter-spacing: -5px;
   text-transform: uppercase;
   text-decoration: none;
   color: transparent;
   -webkit-text-stroke: 1px #0065FF;
+
 }
 
-.outline:hover {
+.outline:hover{
   font-family: jaf-lapture, serif;
-  font-size: 10em;
+  font-size: 9em;
   font-weight: 200;
   font-style: normal;
+
   letter-spacing: -5px;
   text-transform: uppercase;
   text-decoration: none;
   color: transparent;
   -webkit-text-stroke: 1px #FD2675;
+  transition: all 0.2s;
+}
+/********* ANIMATION **********/
+.slide-left {
+	opacity: 0;
+	transform: translateX(2em);
+	transition: all .5s .3s ease-out;
 }
 
-.outline:active {
-  font-family: jaf-lapture, serif;
-  font-size: 10em;
-  font-weight: 200;
-  font-style: normal;
-  letter-spacing: -5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: transparent;
-  -webkit-text-stroke: 1px green;
+.slide-left.is-visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.slide-left-slower {
+	opacity: 0;
+	transform: translateX(2em);
+	transition: all .5s .5s ease-out;
+}
+
+.slide-left-slower.is-visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.slide-left-slowest {
+	opacity: 0;
+	transform: translateX(2em);
+	transition: all .5s .7s ease-out;
+}
+
+.slide-left-slowest.is-visible {
+	opacity: 1;
+	transform: translateX(0);
 }
