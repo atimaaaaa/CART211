@@ -70,7 +70,6 @@ p {
 }
 
 /* ============= COLOR ==================== */
-
 .orange {
   color: #F79322; /*Orange*/
 }
@@ -85,7 +84,7 @@ p {
 }
 
 .bg_blue {
-  width: 100vw;
+  width: 50vw;
   background: #0A3D58; /* Blue */
   padding: 5vh 5vw;
 }
@@ -182,6 +181,17 @@ nav a:link, a:visited {
 }
 
 /* ============= SECTIONS ==================== */
+.introContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.introSpacing{
+  padding-top: 1vh;
+}
+
 .container_main {
   width: 100%;
   height: 100vh;
